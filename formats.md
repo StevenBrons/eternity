@@ -76,25 +76,25 @@ The first line of the file should always contain the format like:
 **Notice:** A single piece is identified by its edges which is possible by property **~xxx~**.
 
 ## Human readable format
-``format hrf``
+``format human_readable``
 Each piece is stored as: 
 ```
-(top <edge_name> right <edge_name> bottom <edge_name> right <edge_name>)
+( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> )
 ```
 Each `<edge_name>` should be replaced by the edge name as given in **~xxx~**
 
 A single possiblility of a super piece is stored as the pieces concatinated by ` , `.
 ```
-(top <edge_name> right <edge_name> bottom <edge_name> right <edge_name>) , (top <edge_name> right <edge_name> bottom <edge_name> right <edge_name>)
+( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> )
 ```
 
 Every super piece possebility is seperated by a line break.
 
 ```
-(top <edge_name> right <edge_name> bottom <edge_name> right <edge_name>) , (top <edge_name> right <edge_name> bottom <edge_name> right <edge_name>)
-(top <edge_name> right <edge_name> bottom <edge_name> right <edge_name>) , (top <edge_name> right <edge_name> bottom <edge_name> right <edge_name>)
-(top <edge_name> right <edge_name> bottom <edge_name> right <edge_name>) , (top <edge_name> right <edge_name> bottom <edge_name> right <edge_name>)
-(top <edge_name> right <edge_name> bottom <edge_name> right <edge_name>) , (top <edge_name> right <edge_name> bottom <edge_name> right <edge_name>)
+( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> )
+( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> )
+( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> )
+( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> )
 ```
 
 
