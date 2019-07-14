@@ -1,4 +1,4 @@
-format human_readable
+format human_readable_no_rotate
 ( top LEATHER right BOLT bottom VOID left VOID )
 ( top LEATHER right STOP bottom VOID left VOID )
 ( top FLOWER right BOLT bottom VOID left VOID )
@@ -255,4 +255,3 @@ format human_readable
 ( top YELLOW_CASTLE right BLUE_RECTANGLE bottom PURPLE_STAR left BLUE_RECTANGLE )
 ( top BLUE_RECTANGLE right PINK_CIRCLE bottom PURPLE_STAR left PINK_CIRCLE )
 ( top YELLOW_CASTLE right PINK_CIRCLE bottom ORANGE_PIPES left PINK_CIRCLE )
-

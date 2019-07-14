@@ -65,36 +65,51 @@ In total there are 24 distinct edges. They are listed below together with a uniq
 | `GREEN_RECTANGLE` ![img](./pieces_images/GREEN_RECTANGLE.bmp) | `ORANGE_PIPES` ![img](./pieces_images/ORANGE_PIPES.bmp)   |
 | `BLUE_RECTANGLE` ![img](./pieces_images/BLUE_RECTANGLE.bmp)   |                                                           |
 
+# Mandatory piece
+At the coordinate `I9` the follwing piece is mandatory: `( top BLUE_STAR right YELLOW_CIRCLE bottom YELLOW_CIRCLE left ORANGE_DIAMOND )`
+
+# Clue pieces
+`C3` is given as `( top PINK_CIRCLE right GREEN_CIRCLE bottom ORANGE_DIAMOND left YELLOW_STAR )`
+`N3` is given as `( top PINK_CIRCLE right PURPLE_STAR bottom PINK_CIRCLE left BLUE_RECTANGLE )`
+`C14` is given as `( top BLUE_RECTANGLE right YELLOW_CIRCLE bottom YELLOW_CASTLE left ORANGE_DIAMOND )`
+`N14` is given as `( top PINK_DIAMOND right YELLOW_CASTLE bottom GREEN_RECTANGLE left BLUE_CASTLE )`
+
 # Super pieces formats
+
+## Filename
 A super pieces file should be named after the positions of the pieces it represents. Like:
-``A1A2``
-``F3F4G3G4``
-``B3``
+`A1A2` `F3F4G3G4` `B3`
+The positions should be ordered in alphabetical order. No file extension is given.
+
+## Format indicator
 The first line of the file should always contain the format like:
-``format <format>`` where `<format>` should be replaced by the used format.
+``<format>`` where `<format>` should be replaced by the used format.
 
 **Notice:** A single piece is identified by its edges which is possible by property **~xxx~**.
 
-## Human readable format
-``format human_readable``
+## Formats
+
+### Human readable format
+``human_readable_no_rotate``
 Each piece is stored as: 
 ```
-( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> )
+( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> )
 ```
 Each `<edge_name>` should be replaced by the edge name as given in **~xxx~**
+Each piece represents all rotations, so to get the full set, all possible rotations should read.
 
 A single possiblility of a super piece is stored as the pieces concatinated by ` , `.
 ```
-( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> )
+( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> )
 ```
 
 Every super piece possebility is seperated by a line break.
 
 ```
-( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> )
-( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> )
-( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> )
-( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> right <edge_name> )
+( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> )
+( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> )
+( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> )
+( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> )
 ```
 
 

@@ -8,13 +8,14 @@
 			"type": "java",
 			"name": "CodeLens (Launch) - App",
 			"request": "launch",
-			"mainClass": "app.App"
+			"mainClass": "app.App",
+			"projectName": "solver"
 		},
 		{
 			"type": "java",
-			"name": "Debug (Launch)-Main",
+			"name": "Debug (Launch) - Current File",
 			"request": "launch",
-			"mainClass": "Main"
+			"mainClass": "${file}"
 		}
 	]
 }
