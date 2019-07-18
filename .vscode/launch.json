@@ -6,15 +6,10 @@
 	"configurations": [
 		{
 			"type": "java",
-			"name": "CodeLens (Launch) - App",
+			"name": "CodeLens (Launch) - CopyToFormat",
 			"request": "launch",
-			"mainClass": "app.App"
+			"mainClass": "copy_to_format.CopyToFormat",
+			"projectName": "solver"
 		},
-		{
-			"type": "java",
-			"name": "Debug (Launch)-Main",
-			"request": "launch",
-			"mainClass": "Main"
-		}
 	]
 }
