@@ -46,10 +46,21 @@ In total there are 24 distinct edges. They are listed below together with a uniq
 | `FLOWER` ![img](./pieces_images/FLOWER.bmp)   | `BOLT` ![img](./pieces_images/BOLT.bmp)       |
 | `BISQUIT` ![img](./pieces_images/BISQUIT.bmp) | `STOP` ![img](./pieces_images/STOP.bmp)       |
 
---------------------
-figure indexes
---------------------
-NONE            = 00 
+## Center edges
+| `YELLOW_PIPES` ![img](./pieces_images/YELLOW_PIPES.bmp)       | `GREEN_CIRCLE` ![img](./pieces_images/GREEN_CIRCLE.bmp)   |
+| ------------------------------------------------------------- | --------------------------------------------------------- |
+| `BLUE_DIAMOND` ![img](./pieces_images/BLUE_DIAMOND.bmp)       | `BLUE_STAR` ![img](./pieces_images/BLUE_STAR.bmp)         |
+| `ORANGE_DIAMOND` ![img](./pieces_images/ORANGE_DIAMOND.bmp)   | `YELLOW_STAR` ![img](./pieces_images/YELLOW_STAR.bmp)     |
+| `PINK_DIAMOND` ![img](./pieces_images/PINK_DIAMOND.bmp)       | `BLUE_CASTLE` ![img](./pieces_images/BLUE_CASTLE.bmp)     |
+| `PURPLE_STAR` ![img](./pieces_images/PURPLE_STAR.bmp)         | `YELLOW_CASTLE` ![img](./pieces_images/YELLOW_CASTLE.bmp) |
+| `YELLOW_CIRCLE` ![img](./pieces_images/YELLOW_CIRCLE.bmp)     | `PINK_PIPES` ![img](./pieces_images/PINK_PIPES.bmp)       |
+| `PINK_CIRCLE` ![img](./pieces_images/PINK_CIRCLE.bmp)         | `PINK_CASTLE` ![img](./pieces_images/PINK_CASTLE.bmp)     |
+| `GREEN_RECTANGLE` ![img](./pieces_images/GREEN_RECTANGLE.bmp) | `ORANGE_PIPES` ![img](./pieces_images/ORANGE_PIPES.bmp)   |
+| `BLUE_RECTANGLE` ![img](./pieces_images/BLUE_RECTANGLE.bmp)   |                                                           |
+
+## Edge indexes
+```
+(index 0 is unspecified)
 VOID            = 01 
 BISQUIT         = 02 
 BLUE_CASTLE     = 03 
@@ -73,26 +84,7 @@ YELLOW_PIPES    = 20
 YELLOW_CASTLE   = 21 
 YELLOW_CIRCLE   = 22 
 YELLOW_STAR     = 23 
-
---------------------
-piece format
---------------------
-1. top
-2. right
-3. bottom
-4. left
-
-## Center edges
-| `YELLOW_PIPES` ![img](./pieces_images/YELLOW_PIPES.bmp)       | `GREEN_CIRCLE` ![img](./pieces_images/GREEN_CIRCLE.bmp)   |
-| ------------------------------------------------------------- | --------------------------------------------------------- |
-| `BLUE_DIAMOND` ![img](./pieces_images/BLUE_DIAMOND.bmp)       | `BLUE_STAR` ![img](./pieces_images/BLUE_STAR.bmp)         |
-| `ORANGE_DIAMOND` ![img](./pieces_images/ORANGE_DIAMOND.bmp)   | `YELLOW_STAR` ![img](./pieces_images/YELLOW_STAR.bmp)     |
-| `PINK_DIAMOND` ![img](./pieces_images/PINK_DIAMOND.bmp)       | `BLUE_CASTLE` ![img](./pieces_images/BLUE_CASTLE.bmp)     |
-| `PURPLE_STAR` ![img](./pieces_images/PURPLE_STAR.bmp)         | `YELLOW_CASTLE` ![img](./pieces_images/YELLOW_CASTLE.bmp) |
-| `YELLOW_CIRCLE` ![img](./pieces_images/YELLOW_CIRCLE.bmp)     | `PINK_PIPES` ![img](./pieces_images/PINK_PIPES.bmp)       |
-| `PINK_CIRCLE` ![img](./pieces_images/PINK_CIRCLE.bmp)         | `PINK_CASTLE` ![img](./pieces_images/PINK_CASTLE.bmp)     |
-| `GREEN_RECTANGLE` ![img](./pieces_images/GREEN_RECTANGLE.bmp) | `ORANGE_PIPES` ![img](./pieces_images/ORANGE_PIPES.bmp)   |
-| `BLUE_RECTANGLE` ![img](./pieces_images/BLUE_RECTANGLE.bmp)   |                                                           |
+```
 
 # Mandatory piece
 At the coordinate `88` the follwing piece is mandatory: `( top BLUE_STAR right YELLOW_CIRCLE bottom YELLOW_CIRCLE left ORANGE_DIAMOND )`
