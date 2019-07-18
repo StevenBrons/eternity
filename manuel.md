@@ -11,21 +11,9 @@ All file locations are relative tot the executed program.
 
 ### Border heuristic
 
-Command: ``border_heuristic $1``
+Command: ``start_heuristics $1``
 Arguments:
-- **$1** The super piece to perform the border heuristic on. By definition nothing happens if the specified super piece does not lie at the border.
-
-### Mandatory heuristic
-
-Commmand: ``mandatory_heuristic $1``
-Arguments:
-- **$1** The super piece to perform the mandatory heuristic on. By definition nothing happens if the specified super piece lies not at position of the mandatory piece.
-
-### Clue heuristic
-
-Commmand: ``clue_heuristic $1``
-Arguments:
-- **$1** The super piece to perform the clue heuristic on. By definition nothing happens if the specified super piece lies not at position of either of the four clue piece positions.
+- **$1** The super piece to perform the starting heuristics on: the mandatory piece, clue piece and border heuristics. Only works for one dimensional super pieces.
 
 ### Combine super pieces
 Combines two super pieces to create one of a higher dimension. The `edge_heuristic` and `duplicate_heuristic` are performed.

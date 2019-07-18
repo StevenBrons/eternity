@@ -4,24 +4,24 @@
 
 ```
 
-      A B C D E F G H I J K L M N O P
+      0 1 2 3 4 5 6 7 8 9 A B C D E F
 
-1     $ # # # # # # # # # # # # # # $
-2     # . . . . . . . . . . . . . . #
-3     # . ! . . . . . . . . . . ! . #
+0     $ # # # # # # # # # # # # # # $
+1     # . . . . . . . . . . . . . . #
+2     # . ! . . . . . . . . . . ! . #
+3     # . . . . . . . . . . . . . . #
 4     # . . . . . . . . . . . . . . #
 5     # . . . . . . . . . . . . . . #
 6     # . . . . . . . . . . . . . . #
 7     # . . . . . . . . . . . . . . #
-8     # . . . . . . . . . . . . . . #
-9     # . . . . . . . M . . . . . . #
-10    # . . . . . . . . . . . . . . #
-11    # . . . . . . . . . . . . . . #
-12    # . . . . . . . . . . . . . . #
-13    # . . . . . . . . . . . . . . #
-14    # . ! . . . . . . . . . . ! . #
-15    # . . . . . . . . . . . . . . #
-16    $ # # # # # # # # # # # # # # $
+8     # . . . . . . . M . . . . . . #
+9     # . . . . . . . . . . . . . . #
+A     # . . . . . . . . . . . . . . #
+B     # . . . . . . . . . . . . . . #
+C     # . . . . . . . . . . . . . . #
+D     # . ! . . . . . . . . . . ! . #
+E     # . . . . . . . . . . . . . . #
+F     $ # # # # # # # # # # # # # # $
 
 ```
 
@@ -32,10 +32,10 @@ In this diagram the following symbols are used:
 	-  The **M** symbol indicate the mandatory piece
 	-  The **!** symbol indicate a clue piece
 
-Coordinates should always be writen in the xy format like: `A1, K2, B10`.
+Coordinates should always be writen in the xy format in hexidecimal like: `A1, K2, BA`.
 Some important coordinates are:
-The mandatory piece: `I9`
-The clue pieces: `C3, N3, C14, N14`
+The mandatory piece: `88`
+The clue pieces: `22, D2, 2D, DD`
 
 # Edges
 In total there are 24 distinct edges. They are listed below together with a unique name.
@@ -66,7 +66,7 @@ In total there are 24 distinct edges. They are listed below together with a uniq
 | `BLUE_RECTANGLE` ![img](./pieces_images/BLUE_RECTANGLE.bmp)   |                                                           |
 
 # Mandatory piece
-At the coordinate `I9` the follwing piece is mandatory: `( top BLUE_STAR right YELLOW_CIRCLE bottom YELLOW_CIRCLE left ORANGE_DIAMOND )`
+At the coordinate `88` the follwing piece is mandatory: `( top BLUE_STAR right YELLOW_CIRCLE bottom YELLOW_CIRCLE left ORANGE_DIAMOND )`
 
 # Clue pieces
 `C3` is given as `( top PINK_CIRCLE right GREEN_CIRCLE bottom ORANGE_DIAMOND left YELLOW_STAR )`
@@ -78,8 +78,8 @@ At the coordinate `I9` the follwing piece is mandatory: `( top BLUE_STAR right Y
 
 ## Filename
 A super pieces file should be named after the positions of the pieces it represents. Like:
-`A1A2` `F3F4G3G4` `B3`
-The positions should be ordered in alphabetical order. No file extension is given.
+`A1A2` `F3F4` `B3`
+The positions should be ordered the order of the hexdecimal values the positions represent. No file extension is given.
 
 ## Format indicator
 The first line of the file should always contain the format like:
@@ -98,21 +98,7 @@ Each piece is stored as:
 Each `<edge_name>` should be replaced by the edge name as given in **~xxx~**
 Each piece represents all rotations, so to get the full set, all possible rotations should read.
 
-A single possiblility of a super piece is stored as the pieces concatinated by ` , `.
-```
-( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> )
-```
-
-Every super piece possebility is seperated by a line break.
-
-```
-( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> )
-( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> )
-( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> )
-( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> ) , ( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> )
-```
-
-
+**Restriction:** Only supports one dimensional super pieces
 
 
 
