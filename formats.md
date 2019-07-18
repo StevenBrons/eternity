@@ -110,8 +110,8 @@ The first line of the file should always contain the format like:
 
 ## Formats
 
-### Human readable format
-``human_readable_no_rotate``
+### Base piece format
+``base_piece_format``
 Each piece is stored as: 
 ```
 ( top <edge_name> right <edge_name> bottom <edge_name> left <edge_name> )
