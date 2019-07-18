@@ -46,12 +46,41 @@ In total there are 24 distinct edges. They are listed below together with a uniq
 | `FLOWER` ![img](./pieces_images/FLOWER.bmp)   | `BOLT` ![img](./pieces_images/BOLT.bmp)       |
 | `BISQUIT` ![img](./pieces_images/BISQUIT.bmp) | `STOP` ![img](./pieces_images/STOP.bmp)       |
 
+--------------------
+figure indexes
+--------------------
+NONE            = 00 
+VOID            = 01 
+BISQUIT         = 02 
+BLUE_CASTLE     = 03 
+BLUE_DIAMOND    = 04 
+BLUE_RECTANLE   = 05 
+BLUE_STAR       = 06 
+BOLT            = 07 
+FLOWER          = 08 
+GREEN_CIRCLE    = 09 
+GREEN_RECTANGLE = 10 
+LEATHER         = 11 
+ORANGE_DIAMOND  = 12 
+ORANGE_PIPES    = 13 
+PINK_CASTLE     = 14 
+PINK_CIRCLE     = 15 
+PINK_DIAMOND    = 16 
+PINK_PIPES      = 17 
+PURPLE_STAR     = 18 
+STOP            = 19 
+YELLOW_PIPES    = 20 
+YELLOW_CASTLE   = 21 
+YELLOW_CIRCLE   = 22 
+YELLOW_STAR     = 23 
 
-
-
-
-
-
+--------------------
+piece format
+--------------------
+1. top
+2. right
+3. bottom
+4. left
 
 ## Center edges
 | `YELLOW_PIPES` ![img](./pieces_images/YELLOW_PIPES.bmp)       | `GREEN_CIRCLE` ![img](./pieces_images/GREEN_CIRCLE.bmp)   |
