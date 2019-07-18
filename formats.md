@@ -32,7 +32,7 @@ In this diagram the following symbols are used:
 	-  The **M** symbol indicate the mandatory piece
 	-  The **!** symbol indicate a clue piece
 
-Coordinates should always be writen in the xy format in hexidecimal like: `A1, K2, BA`.
+Coordinates should always be writen in the **yx** format in hexidecimal like: `A1, K2, BA`.
 Some important coordinates are:
 The mandatory piece: `88`
 The clue pieces: `22, D2, 2D, DD`
@@ -90,10 +90,10 @@ YELLOW_STAR     = 23
 At the coordinate `88` the follwing piece is mandatory: `( top BLUE_STAR right YELLOW_CIRCLE bottom YELLOW_CIRCLE left ORANGE_DIAMOND )`
 
 # Clue pieces
-`C3` is given as `( top PINK_CIRCLE right GREEN_CIRCLE bottom ORANGE_DIAMOND left YELLOW_STAR )`
-`N3` is given as `( top PINK_CIRCLE right PURPLE_STAR bottom PINK_CIRCLE left BLUE_RECTANGLE )`
-`C14` is given as `( top BLUE_RECTANGLE right YELLOW_CIRCLE bottom YELLOW_CASTLE left ORANGE_DIAMOND )`
-`N14` is given as `( top PINK_DIAMOND right YELLOW_CASTLE bottom GREEN_RECTANGLE left BLUE_CASTLE )`
+`22` is given as `( top PINK_CIRCLE right GREEN_CIRCLE bottom ORANGE_DIAMOND left YELLOW_STAR )`
+`2D` is given as `( top PINK_CIRCLE right PURPLE_STAR bottom PINK_CIRCLE left BLUE_RECTANGLE )`
+`D2` is given as `( top BLUE_RECTANGLE right YELLOW_CIRCLE bottom YELLOW_CASTLE left ORANGE_DIAMOND )`
+`DD` is given as `( top PINK_DIAMOND right YELLOW_CASTLE bottom GREEN_RECTANGLE left BLUE_CASTLE )`
 
 # Super pieces formats
 
