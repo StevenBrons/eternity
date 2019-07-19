@@ -2,7 +2,7 @@
 
 ### Copy and convert super piece files
 
-Command: ``copy_to_format $1 $2 $3``
+Command: ``java -jar copy_to_format $1 $2 $3``
 Arguments:
 All file locations are relative tot the executed program.
 - **$1** The super piece format to write the file new file in.

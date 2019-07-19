@@ -122,9 +122,17 @@ Each piece represents all rotations, so to get the full set, all possible rotati
 **Restriction:** Only supports one dimensional super pieces
 
 ### Complete bit format
-``complete_bit_format``
+``complete_bit_f1``
 Every piece is stored as a 32-bit integer. 
+
 `<kind><rotation><piece_id><left_edge><bottom_edge><right_edge><top_edge>`
+TOP_BIT         = 0;
+RIGHT_BIT       = 5;
+BOTTOM_BIT      = 10;
+LEFT_BIT        = 15;
+ID_BIT          = 20;
+ROTATION_BIT    = 28;
+KIND_BIT        = 30
 
 
 
