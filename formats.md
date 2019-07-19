@@ -120,7 +120,7 @@ Each `<edge_name>` should be replaced by the edge name as given in **~xxx~**
 Each piece represents all rotations, so to get the full set, all possible rotations should read.
 
 **Restriction:** Only supports one dimensional super pieces
-
+ 
 ### Complete bit format
 ``complete_bit_f1``
 Every piece is stored as a 32-bit integer. 
