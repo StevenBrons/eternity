@@ -14,7 +14,7 @@
 5     # . . . . . . . . . . . . . . #
 6     # . . . . . . . . . . . . . . #
 7     # . . . . . . . . . . . . . . #
-8     # . . . . . . . M . . . . . . #
+8     # . . . . . . M . . . . . . . #
 9     # . . . . . . . . . . . . . . #
 A     # . . . . . . . . . . . . . . #
 B     # . . . . . . . . . . . . . . #
@@ -34,7 +34,7 @@ In this diagram the following symbols are used:
 
 Coordinates should always be writen in the **yx** format in hexidecimal like: `A1, K2, BA`.
 Some important coordinates are:
-The mandatory piece: `88`
+The mandatory piece: `87`
 The clue pieces: `22, D2, 2D, DD`
 
 # Edges
