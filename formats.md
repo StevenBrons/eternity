@@ -87,7 +87,7 @@ YELLOW_STAR     = 23
 ```
 
 # Mandatory piece
-At the coordinate `0x88` the follwing piece is mandatory: `( top BLUE_STAR right YELLOW_CIRCLE bottom YELLOW_CIRCLE left ORANGE_DIAMOND )`
+At the coordinate `0x87` the follwing piece is mandatory: `( top BLUE_STAR right YELLOW_CIRCLE bottom YELLOW_CIRCLE left ORANGE_DIAMOND )`
 
 # Clue pieces
 ```0x22 is given as ( top PINK_CIRCLE right GREEN_CIRCLE bottom ORANGE_DIAMOND left YELLOW_STAR )```
